@@ -1,0 +1,29 @@
+{
+  "name": "react-native-dynamic-forms",
+  "version": "1.0.0",
+  "description": "React Native Dynamic Forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janotama/react-native-custom-titlebar.git"
+  },
+  "peerDependencies": {
+    "react-native-responsive-fontsize": "^0.2.2",
+    "react-native-keyboard-aware-scroll-view": "^0.9.1"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Dynamic",
+    "Forms"
+  ],
+  "author": "Janotama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janotama/react-native-custom-titlebar/issues"
+  },
+  "homepage": "https://github.com/janotama/react-native-custom-titlebar#readme"
+}
