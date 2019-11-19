@@ -11,7 +11,7 @@ props :
 
 */
 
-const Forms = (props, nativeEvent) => {
+const Forms = (props) => {
   return (
     <KeyboardAwareScrollView>
       <View style={global_style.container}>
@@ -21,7 +21,7 @@ const Forms = (props, nativeEvent) => {
             return (
               <TextInput
                 key={data.placeholder}
-                ref={ref => { nativeEvent[refName] = ref }}
+                ref={ref => { props.context[refName] = ref }}
                 style={global_style.inputForm}
                 placeholder={data.placeholder}
               />
