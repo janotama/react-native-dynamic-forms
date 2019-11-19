@@ -20,10 +20,12 @@ const Forms = props => {
       <View style={global_style.container}>
         {
           props.formProperties.map((data) => {
-            <TextInput
-              style={global_style.inputForm}
-              placeholder={data.placeholder}
-            />
+            return (
+              <TextInput
+                style={global_style.inputForm}
+                placeholder={data.placeholder}
+              />
+            )
           })
         }
       </View>
