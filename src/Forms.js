@@ -6,22 +6,22 @@ import { RFPercentage as RF } from "react-native-responsive-fontsize";
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 /*
 props : 
-- title [string]
-- backAction [function]
-- backgroundColor [array]
-- leftIcon [string]
-- isBackEnabled [bool]
-- height [number]
+* formProperties [object] 
+  - keys : placeholder, refName
+
 */
 
-const Forms = props => {
+const Forms = (props, nativeEvent) => {
   return (
     <KeyboardAwareScrollView>
       <View style={global_style.container}>
         {
           props.formProperties.map((data) => {
+            let refName = data.ref
             return (
               <TextInput
+                key={data.placeholder}
+                ref={ref => { nativeEvent[refName] = ref }}
                 style={global_style.inputForm}
                 placeholder={data.placeholder}
               />
