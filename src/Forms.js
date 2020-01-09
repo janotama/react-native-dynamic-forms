@@ -7,8 +7,18 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 /*
 props : 
 * formProperties [object] 
-  - keys : placeholder, refName, type
-* style [object stylesheet]
+  - keys : placeholder, ref, type
+* inputStyle [object stylesheet]
+*/
+
+/*
+on call :
+  - add on props (context={this})
+*/
+
+/*
+how to get : 
+  - this.refname._lastNativeText
 */
 
 const Forms = (props) => {
@@ -25,7 +35,6 @@ const Forms = (props) => {
                 style={props.inputStyle}
                 placeholder={data.placeholder}
                 keyboardType={data.type ? data.type : 'default'}
-
               />
             )
           })
